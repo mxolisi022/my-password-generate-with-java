@@ -44,12 +44,12 @@ public class Main {
         String pass = "";
         for (int x = 0; leng > x; x++) {
             int i = rand.nextInt(26);
-            char letter = alphabet[i];
-            if (pass.indexOf(letter) >= 0) {
+            char lett = alphabet[i];
+            if (pass.indexOf(lett) >= 0) {
                 i = rand.nextInt(26);
-                letter = alphabet[i];
+                lett = alphabet[i];
             }
-            pass = pass + letter;
+            pass = pass + lett;
         }
         for (int a = 0; special > a; a++) {
             int l = rand.nextInt(pass.length());
@@ -60,7 +60,7 @@ public class Main {
 
 
         for (int q = 0; capital > q; q++) {
-            boolean loop = true;
+            boolean loo = true;
             int i = rand.nextInt(pass.length());
             char lala = pass.charAt(i);
             while (!Character.isLetter(lala)) {
